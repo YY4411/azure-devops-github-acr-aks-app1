@@ -42,13 +42,13 @@ git add .
 git commit -am "V1 Base Commit"
 
 # Link Github Remote Repository
-git remote add origin https://github.com/stacksimplify/azure-devops-github-acr-aks-app1.git
+git remote add origin https://github.com/YY4411/azure-devops-github-acr-aks-app1.git
 
 # Push to Remote Repository
 git push --set-upstream origin master
 
 # Go to Github Repo - Refresh and check files appeared in githbu repo
-https://github.com/stacksimplify/azure-devops-github-acr-aks-app1
+https://github.com/YY4411/azure-devops-github-acr-aks-app1.git
 ```
 
 ## Step-03: Review github checked-in files
@@ -59,7 +59,7 @@ https://github.com/stacksimplify/azure-devops-github-acr-aks-app1
 ## Step-04: Create Azure Container Registry ACR
 - Go to Services -> Container Registries
 - Click on **Add**
-- Subscription: StackSimplify-Paid-Subsciption
+- Subscription: <Subsciption-Name>
 - Resource Group: acr-rg1
 - Registry Name: aksdevopsacr   (NAME should be unique across Azure Cloud)
 - Location: Central US
@@ -91,7 +91,7 @@ https://github.com/stacksimplify/azure-devops-github-acr-aks-app1
   - Provide Github Password
   - Click on **Approve and Install** for Repositories selected
 - Configure Your Pipeline: Docker (Build and Push Image to Azure Container Registry )
-- Select an Azure Subscription: stacksimplify-paid-subscription
+- Select an Azure Subscription: <Subsciption-Name>
 - Continue (Login as admin user)
 - Container Registry: aksdevopsacr
 - Image Name: app1-nginx
