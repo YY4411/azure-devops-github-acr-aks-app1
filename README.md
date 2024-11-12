@@ -59,10 +59,10 @@ https://github.com/YY4411/azure-devops-github-acr-aks-app1.git
 ## Step-04: Create Azure Container Registry ACR
 - Go to Services -> Container Registries
 - Click on **Add**
-- Subscription: <Subsciption-Name>
+- Subscription: azure_subscription
 - Resource Group: acr-rg1
-- Registry Name: aksdevopsacr   (NAME should be unique across Azure Cloud)
-- Location: Central US
+- Registry Name: aksdevopsacr1554   (NAME should be unique across Azure Cloud)
+- Location: North Europe
 - SKU: Basic  (Pricing Note: $0.167 per day)
 - Click on **Review + Create**
 - Click on **Create**
@@ -72,13 +72,13 @@ https://github.com/YY4411/azure-devops-github-acr-aks-app1.git
   - https://dev.azure.com/
   - Sign in to Azure DevOps
 - Our Organization will be automatically created and if you want to manually create organization you can create one. 
-- Organization Name: aksdemo1
+- Organization Name: aksdemo1554
 
 
 ## Step-06 : Create DevOps Project
 - Project Name: azure-devops-github-acr-aks-app1
 - Project Description: AKS CICD Pipelines with Github and Azure Container Registry ACR
-- Visibility: Private
+- Visibility: Public
 - Advanced: Leave to defaults
   - Version Control: Git
   - Work Item Process: Basic
